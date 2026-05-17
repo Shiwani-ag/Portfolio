@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Data Science Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="loading">
+    <div id="scroll-progress"></div>
+    <div id="custom-cursor"></div>
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">Portfolio<span></span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Data Science Enthusiast</span>
+                    <h1>Turning Data into <span class="highlight" id="typing-text"></span></h1>
+                    <p>Hi, I'm Shiwani Agrawal, a B.Tech Data Science student focused on Machine Learning, Analytics,
+                        and Data-driven
+                        problem solving.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Get In Touch</a>
+                        <a href="Resume1.pdf" download class="btn ghost">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="s.png" alt="Profile Photo" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a passionate Data Science student currently pursuing my B.Tech degree. My journey in
+                            technology is driven by a fascination with how data can be leveraged to understand complex
+                            systems and predict future trends.</p>
+                        <p>I specialize in building end-to-end data pipelines, designing predictive models, and creating
+                            insightful visualizations that tell a story.</p>
+                        <ul class="edu-list">
+                            <li><strong>Education:</strong> B.Tech (Computer Science and Engineering)</li>
+                            <li><strong>GPA:</strong> 6.9</li>
+                            <li><strong>Focus:</strong> Machine Learning, Big Data Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Arsenal</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>Java</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Science</h3>
+                        <div class="skill-tags">
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Scikit-Learn</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                            <span>NLTK</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>Power BI</span>
+                            <span>Git</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <div class="project-grid">
+                    <!-- Project Card 1: NEO Distance and Frequency Tracker -->
+                    <div class="project-card glass">
+                        <div class="project-info">
+                            <h3>NEO Distance and Frequency Tracker</h3>
+                            <p>Analyzed NASA's datasets to study Near-Earth Objects, focusing on approach distances,
+                                frequencies, and temporal patterns with extensive data cleaning and visualization.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Seaborn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2: Urban Crime Analysis in India -->
+                    <div class="project-card glass">
+                        <div class="project-info">
+                            <h3>Urban Crime Analysis in India</h3>
+                            <p>Built an interactive dashboard to analyze crime categories across Indian cities,
+                                identifying hotspots and yearly patterns using structured datasets.</p>
+                            <div class="project-tags">
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>Excel</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Digital Credentials</h2>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Build Generative AI Apps and Solutions with No-Code Tools</h3>
+                            <p class="issuer">Infosys Springboard</p>
+                            <a href="Build Generative AI Apps and Solutions with No-Code Tools.pdf" target="_blank"
+                                class="btn-link">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>ChatGPT4 Prompt Engineering ChatGPT, Generative AI & LLM</h3>
+                            <p class="issuer">Infosys Springboard</p>
+                            <a href="ChatGPT4 Prompt Engineering ChatGPT, Generative AI & LLM infosys.pdf"
+                                target="_blank" class="btn-link">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Deloitte Job Simulation Certificate</h3>
+                            <p class="issuer">Forage | Deloitte</p>
+                            <a href="Deloitte certificate.pdf" target="_blank" class="btn-link">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Computational Theory Language Principle & Finite Automata Theory</h3>
+                            <p class="issuer">Infosys Springboard</p>
+                            <a href="Infosys Computational Theory Language Principle & Finite Automata Theory.pdf"
+                                target="_blank" class="btn-link">View Certificate</a>
+                        </div>
+                    </div>
+                    <!-- <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div> -->
+                    <!-- </div> -->
+                    <div class="cert-card glass">
+                        <div class="cert-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>Master Generative AI & Generative AI Tool</h3>
+                            <p class="issuer">Infosys Springboard</p>
+                            <a href="master generative ai & generative ai tool.pdf" target="_blank"
+                                class="btn-link">View
+                                Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education</h2>
+                </div>
+                <div class="edu-card glass">
+                    <div class="edu-header">
+                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                        <span class="date">2023 - Present</span>
+                    </div>
+                    <p class="inst">Lovely Professional University</p>
+                    <ul class="edu-details">
+                        <li>CGPA: 6.81</li>
+                    </ul>
+                </div>
+
+                <div class="edu-card glass">
+                    <div class="edu-header">
+                        <h3>Intermediate</h3>
+                        <span class="date">2021 - 2023</span>
+                    </div>
+                    <p class="inst">DAV Public School</p>
+                    <ul class="edu-details">
+                        <li>Percentage: 80%</li>
+                    </ul>
+                </div>
+
+                <div class="edu-card glass">
+                    <div class="edu-header">
+                        <h3>Matriculation</h3>
+                        <span class="date">2020 - 2021</span>
+                    </div>
+                    <p class="inst">Carmel High School</p>
+                    <ul class="edu-details">
+                        <li>Percentage: 86%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact reveal">
+            <div class="container">
+                <div class="contact-box glass">
+                    <h2>Get In Touch</h2>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                        visions.</p>
+                    <div class="contact-links">
+                        <a href="mailto:agshiw2005@gmail.com" class="contact-item">
+                            <i data-lucide="mail"></i> Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/shiwaniag/" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
+                            <i data-lucide="linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Shiwani-ag" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DS Portfolio. Built with precision.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
